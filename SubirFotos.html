@@ -1,0 +1,24 @@
+
+<!-- Created on Tue May  5 19:20:06 2020
+
+@author: steza -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Categorías</title>
+</head>
+<body>
+<h1>Sube Imágenes</h1>
+<form action = "http://localhost:5000/subir" method = "POST"  enctype = "multipart/form-data">
+<label>Escoge una categoría: <select name="categoria" id="categoria">
+  <option value="perro" selected>Perro</option> 
+  <option value="gato">Gato</option>
+</select></label>
+<br><br>
+
+<input type = "file" name = "file" />
+<input type = "submit" name="Guardar" onclick="sendData"/>
+</form>
+
+</body>
+</html>
